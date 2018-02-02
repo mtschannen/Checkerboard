@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="boardArea" fx:id="boardArea" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="checkerboard_2.FXMLDocumentController">
+   <children>
+      <VBox id="vBox" fx:id="vBox" prefHeight="400.0" prefWidth="400.0">
+         <children>
+            <MenuBar fx:id="menuBar" prefHeight="29.0" prefWidth="389.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="Grid">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#onExtraLargeSize" text="16 X 16" />
+                        <MenuItem mnemonicParsing="false" onAction="#onLargeSize" text="10 X 10" />
+                        <MenuItem mnemonicParsing="false" onAction="#onMediumSize" text="8 X 8" />
+                        <MenuItem mnemonicParsing="false" onAction="#onSmallSize" text="3 X 3" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Colors">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#onDefaultColor" text="Default" />
+                        <MenuItem mnemonicParsing="false" onAction="#onBlueColor" text="Blue" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
